@@ -1,0 +1,48 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e982144fa6e8a15946a712e8b0533378446"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9867a03f3e2cc0994dbb98011af1610b98"
+    }
+  ],
+  "containerPath" : "/Users/son/Documents/development/iosnative/Flash-Chat-iOS13/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/son/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/son/Library/Developer/Xcode/DerivedData/Pods-gwtxibfgnuwdvydurvqikglajcux/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/son/Library/Developer/Xcode/DerivedData/Pods-gwtxibfgnuwdvydurvqikglajcux/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
