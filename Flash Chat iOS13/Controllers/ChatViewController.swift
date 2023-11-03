@@ -12,11 +12,13 @@ class ChatViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
-    
+    var messages: [Message] = [ Message(sender: "son@gmail.com", body: "Hello"),Message(sender: "uyen@gmail.com", body: "Hi!"),Message(sender: "son@gmail.com", body: "Nice to meet you ")]
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        title = "⚡️FlashChat"
+        title = K.appname
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -31,4 +33,19 @@ class ChatViewController: UIViewController {
           print("Error signing out: %@", signOutError)
         }
     }
+}
+extension ChatViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label?.text = messages[indexPath.row].body
+        return cell
+    }
+    
+    
+    
 }
